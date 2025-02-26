@@ -1,10 +1,10 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import BoardRegist from './components/BoardRegist.vue';
+import BoardList from './components/BoardList.vue';
 </script>
 
 <template>
-  <BoardRegist></BoardRegist>
+  <router-view></router-view>
 </template>
 
 <style scoped>

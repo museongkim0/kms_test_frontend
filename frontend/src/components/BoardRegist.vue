@@ -23,14 +23,14 @@ const submitPost = async () => {
 }
 
 const cancel = () => {
-postStore.resetPost()
+boardStore.resetPost()
 router.push('/')
 }
 
 const handleModalConfirm = () => {
     showModal.value = false
     if (isSuccess.value) {
-        postStore.resetPost()
+        boardStore.resetPost()
         router.push('/')
     }
 }
