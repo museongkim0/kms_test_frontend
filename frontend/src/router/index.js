@@ -1,14 +1,15 @@
-import { createRouter, createMemoryHistory } from 'vue-router';
-import HelloWorld from '../components/HelloWorld.vue';
+import { createRouter, createWebHistory } from 'vue-router';
+import BoardList from '../components/BoardList.vue';
 import BoardRegist from '../components/BoardRegist.vue';
 
+
 const routes = [
-{ path: '/', name: 'HelloWorld', component: HelloWorld },
+{ path: '/', name: 'BoardList', component: BoardList },
 { path: '/register', name: 'BoardRegist', component: BoardRegist },
 ];
 
 const router = createRouter({
-history: createMemoryHistory(),
+history: createWebHistory(),
 routes,
 });
 
