@@ -15,7 +15,7 @@ const goToCreate = () => {
 }
 
 const goToDetail = (id) => {
-  router.push(`/read/${id}`)
+  router.push(`/detail/${id}`)
 }
 
 const changePage = (page) => {
@@ -51,8 +51,8 @@ const changePage = (page) => {
             <tbody class="bg-white divide-y divide-gray-200">
                 <tr
                 v-for="board in boardStore.boardList"
-                :key="board.id"
-                @click="goToDetail(board.id)"
+                :key="board.idx"
+                @click="goToDetail(board.idx)"
                 class="hover:bg-gray-50 cursor-pointer"
                 >
                 <td class="px-6 py-4 whitespace-nowrap">{{ board.idx }}</td>
